@@ -123,7 +123,6 @@ const translations = {
       upcoming: {
         type: "UPCOMING TALK",
         date: "OCT 23, 2026",
-        context: "INTERNAL",
         title: "How AI transforms the software development lifecycle",
         description: "How artificial intelligence is transforming the different stages of software development and how to integrate it while maintaining good engineering practices.",
       },
@@ -292,7 +291,6 @@ const translations = {
       upcoming: {
         type: "PRÓXIMA CHARLA",
         date: "23 OCT 2026",
-        context: "INTERNA",
         title: "Cómo la IA transforma el ciclo de vida del software",
         description: "Cómo la inteligencia artificial está transformando las distintas etapas del desarrollo de software y cómo integrarla manteniendo buenas prácticas de ingeniería.",
       },
