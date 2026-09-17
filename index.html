@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Blanca Rosa Gómez Fernández, Software Crafter.">
+    <title>Blanca Rosa Gómez Fernández | Software Crafter</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+        document.documentElement.dataset.theme = savedTheme || preferredTheme;
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="accessibility.skipLink">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Blanca Rosa Gómez Fernández, home" data-i18n-aria-label="accessibility.brandHome">
+          <svg class="brand-mark" viewBox="0 0 32 44" aria-hidden="true">
+            <path d="M26.5 2.5C11 9 3.5 18.5 7 29.5c2 6.5 8.5 7.8 13 2.8 5.8-6.4 6.6-18.7 6.5-29.8Z"/>
+            <path d="M3.5 41c5-12.5 11.6-22 20.7-31.4"/>
+          </svg>
+          <span class="brand-name">
+            <span class="brand-first">Blanca Rosa</span>
+            <span class="brand-last">Gómez Fernández</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-i18n-aria-label="accessibility.openMenu">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-i18n-aria-label="accessibility.primaryNavigation">
+          <a class="nav-link active" href="#home" aria-current="page" data-i18n="navigation.home">Home</a>
+          <a class="nav-link" href="#about" data-i18n="navigation.about">About</a>
+          <a class="nav-link" href="#experience" data-i18n="navigation.experience">Experience</a>
+          <a class="nav-link" href="#skills" data-i18n="navigation.skills">Skills</a>
+          <a class="nav-link" href="#projects" data-i18n="navigation.projects">Projects</a>
+          <a class="nav-link" href="#articles" data-i18n="navigation.articles">Articles</a>
+          <a class="nav-link" href="#education" data-i18n="navigation.education">Education</a>
+          <a class="nav-link" href="#contact" data-i18n="navigation.contact">Contact</a>
+        </nav>
+
+        <div class="header-controls">
+          <div class="language-selector">
+            <button class="language-toggle" type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="language-menu" aria-label="Select language. Current language: English" data-i18n-aria-label="accessibility.languageSelector">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.5"/>
+                <path d="M3.8 9h16.4M3.8 15h16.4M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5S14.2 18.2 12 20.5C9.8 18.2 8.7 15.4 8.7 12S9.8 5.8 12 3.5Z"/>
+              </svg>
+            </button>
+            <div class="language-menu" id="language-menu" role="menu" aria-label="Languages" data-i18n-aria-label="accessibility.languageMenu" aria-hidden="true" inert>
+              <button class="language-option" type="button" role="menuitemradio" data-language="en" aria-checked="true">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7"/></svg>
+                <span>English</span>
+              </button>
+              <button class="language-option" type="button" role="menuitemradio" data-language="es" aria-checked="false">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 8 3 3 7-7"/></svg>
+                <span>Español</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme" data-i18n-aria-label="accessibility.switchToDark">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="3.5"/>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 15.3A8.5 8.5 0 0 1 8.7 4a8.5 8.5 0 1 0 11.3 11.3Z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Developer</p>
+            <h1 id="hero-title">
+              <span>Blanca Rosa</span>
+              <span class="accent-name">Gómez Fernández</span>
+            </h1>
+            <p class="role">Software Crafter</p>
+            <span class="title-rule" aria-hidden="true"></span>
+            <p class="introduction" data-i18n="hero.description">I'm a developer with experience working across frontend, backend and domain layers. I'm passionate about clean code, software architecture and continuous learning.</p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="assets/documents/Blanca-Rosa-Gomez-Fernandez-CV-ES-v2.pdf" download="Blanca-Rosa-Gomez-Fernandez-CV-ES.pdf" data-i18n-aria-label="accessibility.downloadCv">
+                <span data-i18n="hero.downloadCv">Download CV</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/>
+                </svg>
+              </a>
+              <a class="button button-secondary" href="#contact">
+                <span data-i18n="hero.contact">Contact me</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m-5-5 5 5-5 5"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="portrait-composition">
+            <span class="organic-shape shape-one" aria-hidden="true"></span>
+            <span class="organic-shape shape-two" aria-hidden="true"></span>
+            <svg class="portrait-line" viewBox="0 0 540 600" aria-hidden="true">
+              <path d="M92 503C11 412 35 259 142 111 231-13 422-1 494 110c62 96-52 211-135 291-73 70-184 198-267 102Z"/>
+            </svg>
+            <svg class="botanical botanical-left" viewBox="0 0 150 250" aria-hidden="true">
+              <path class="stem" d="M122 236C109 165 83 93 27 18"/>
+              <path class="leaf" d="M93 142c-31-7-48 5-58 28 27 4 47-4 58-28ZM72 96c-25-9-42-1-54 17 23 7 41 2 54-17ZM109 184c-25 4-38 18-42 39 23-2 38-14 42-39ZM52 61c-5-23-19-35-39-39 4 22 17 36 39 39ZM113 157c21-10 29-27 27-47-20 9-29 24-27 47Z"/>
+            </svg>
+            <div class="portrait-frame">
+              <img src="assets/images/blanca-rosa-portrait.png" alt="Portrait of Blanca Rosa Gómez Fernández" data-i18n-alt="hero.portraitAlt">
+            </div>
+          </div>
+
+          <div class="social-links" aria-label="Social links" data-i18n-aria-label="accessibility.socialLinks">
+            <a class="social-link placeholder-link" href="#" aria-label="GitHub, URL to be added" data-i18n-aria-label="accessibility.githubPlaceholder" title="GitHub URL to be added">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.6 2.4 1.1 2.9.9.1-.7.4-1.1.7-1.4-2.3-.3-4.7-1.1-4.7-5A3.9 3.9 0 0 1 6.7 8c-.1-.3-.5-1.3.1-3.3 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.6 2 .2 3 .1 3.3a3.9 3.9 0 0 1 1.1 2.8c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+            </a>
+            <a class="social-link placeholder-link" href="#" aria-label="LinkedIn, URL to be added" data-i18n-aria-label="accessibility.linkedinPlaceholder" title="LinkedIn URL to be added">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5H3.2V21h3.3V8.5ZM4.9 3A1.9 1.9 0 1 0 5 6.8 1.9 1.9 0 0 0 5 3ZM21 13.8c0-3.8-2-5.6-4.7-5.6a4 4 0 0 0-3.6 2v-1.7H9.4V21h3.3v-6.2c0-1.6.3-3.2 2.3-3.2s2.6 1.8 2.6 3.3V21H21v-7.2Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-inner">
+          <header class="about-heading about-reveal" data-reveal>
+            <h2 id="about-title" data-i18n="about.title">A little more about me</h2>
+          </header>
+
+          <blockquote class="about-manifesto about-reveal" data-reveal>
+            <p>
+              <span data-i18n="about.statementStart">I like building software that</span>
+              <em data-i18n="about.statementEmphasis">makes sense</em><span data-i18n="about.statementEnd"> — not only when it works, but also when you come back to the code months later.</span>
+            </p>
+          </blockquote>
+
+          <div class="approach about-reveal" data-reveal>
+            <div class="approach-heading">
+              <span class="approach-number" aria-hidden="true">01</span>
+              <h3 data-i18n="about.approachTitle">MY APPROACH</h3>
+            </div>
+            <div class="approach-content">
+              <div class="approach-copy">
+                <p data-i18n="about.approachFirst">During my professional experience, I have worked across different layers of software applications, from frontend and backend to the domain layer.</p>
+                <p data-i18n="about.approachSecond">I enjoy understanding the problem behind the code and building solutions that remain clear, maintainable and easy to evolve.</p>
+              </div>
+              <svg class="approach-illustration" viewBox="0 0 420 230" aria-hidden="true">
+                <path class="approach-stem" pathLength="1" d="M22 190C86 188 91 133 145 132s64 46 119 20c53-25 59-87 132-103"/>
+                <path class="approach-branch approach-branch-one" pathLength="1" d="M115 143c-14-30-11-56 8-79"/>
+                <path class="approach-branch approach-branch-two" pathLength="1" d="M219 162c-2 25 11 41 38 50"/>
+                <path class="approach-branch approach-branch-three" pathLength="1" d="M309 116c25 4 43-3 56-22"/>
+                <path class="approach-leaf approach-leaf-one" d="M117 86c-20-2-32 6-38 23 18 0 31-7 38-23Z"/>
+                <path class="approach-leaf approach-leaf-two" d="M247 199c17-4 29 1 38 14-16 4-29 0-38-14Z"/>
+                <circle class="approach-node approach-node-one" cx="22" cy="190" r="5"/>
+                <circle class="approach-node approach-node-two" cx="145" cy="132" r="4"/>
+                <rect class="approach-node approach-node-three" x="302" y="109" width="14" height="14" rx="2"/>
+                <circle class="approach-node approach-node-four" cx="396" cy="49" r="6"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="values about-reveal" data-reveal>
+            <div class="values-heading">
+              <span class="values-number" aria-hidden="true">02</span>
+              <h3 data-i18n="about.valuesTitle">THINGS I CARE ABOUT</h3>
+            </div>
+
+            <div class="values-plant">
+              <p class="value-root" data-i18n="about.goodSoftware">Good software</p>
+
+              <svg class="plant-svg plant-svg-desktop" viewBox="0 0 1000 380" preserveAspectRatio="none" aria-hidden="true">
+                <path class="plant-path plant-stem" pathLength="1" d="M173 198C260 204 294 178 364 188s97 42 168 17c75-26 116-14 188-4 82 12 128-14 226-73"/>
+                <path class="plant-path plant-branch plant-branch-one" pathLength="1" d="M290 185c-15 45-46 73-94 84"/>
+                <path class="plant-path plant-branch plant-branch-two" pathLength="1" d="M343 185c-21-48-51-75-95-87"/>
+                <path class="plant-path plant-branch plant-branch-three" pathLength="1" d="M486 218c-1 49-22 82-65 102"/>
+                <path class="plant-path plant-branch plant-branch-four" pathLength="1" d="M530 205c-3-60-23-102-64-128"/>
+                <path class="plant-path plant-branch plant-branch-five" pathLength="1" d="M676 194c17 51 51 77 102 81"/>
+                <path class="plant-path plant-branch plant-branch-six" pathLength="1" d="M723 201c16-61 51-98 105-111"/>
+                <path class="plant-leaf plant-leaf-one" d="M310 181c-22-16-39-15-53 1 20 13 38 13 53-1Z"/>
+                <path class="plant-leaf plant-leaf-two" d="M575 201c18-15 36-16 52-3-17 14-35 15-52 3Z"/>
+                <path class="plant-leaf plant-leaf-three" d="M746 180c16-17 33-20 51-10-15 16-32 20-51 10Z"/>
+              </svg>
+
+              <svg class="plant-svg plant-svg-mobile" viewBox="0 0 320 520" preserveAspectRatio="none" aria-hidden="true">
+                <path class="plant-path plant-stem" pathLength="1" d="M160 43c-18 64 17 105 0 169s16 108 0 167c-10 38-3 73 9 105"/>
+                <path class="plant-path plant-branch plant-branch-one" pathLength="1" d="M156 112c-19 1-29 11-36 34"/>
+                <path class="plant-path plant-branch plant-branch-two" pathLength="1" d="M166 171c18-2 29 8 34 29"/>
+                <path class="plant-path plant-branch plant-branch-three" pathLength="1" d="M158 236c-20 1-30 14-38 40"/>
+                <path class="plant-path plant-branch plant-branch-four" pathLength="1" d="M160 300c21 0 32 11 40 36"/>
+                <path class="plant-path plant-branch plant-branch-five" pathLength="1" d="M158 362c-19 1-30 14-38 39"/>
+                <path class="plant-path plant-branch plant-branch-six" pathLength="1" d="M162 421c18 1 29 13 38 37"/>
+                <path class="plant-leaf plant-leaf-one" d="M151 103c-19-15-35-14-48 1 18 12 34 11 48-1Z"/>
+                <path class="plant-leaf plant-leaf-two" d="M169 287c18-13 34-12 47 2-17 11-33 11-47-2Z"/>
+                <path class="plant-leaf plant-leaf-three" d="M151 410c-18-13-34-12-47 2 17 11 33 11 47-2Z"/>
+              </svg>
+
+              <ul class="value-list">
+                <li class="value-item value-clean" style="--value-order: 2">
+                  <span class="value-node" aria-hidden="true"></span>
+                  <span data-i18n="about.values.cleanCode">Clean Code</span>
+                </li>
+                <li class="value-item value-architecture" style="--value-order: 4">
+                  <span class="value-node" aria-hidden="true"></span>
+                  <span data-i18n="about.values.architecture">Software Architecture</span>
+                </li>
+                <li class="value-item value-tdd" style="--value-order: 1">
+                  <span class="value-node" aria-hidden="true"></span>
+                  <span data-i18n="about.values.tdd">TDD</span>
+                </li>
+                <li class="value-item value-ddd" style="--value-order: 3">
+                  <span class="value-node" aria-hidden="true"></span>
+                  <span data-i18n="about.values.ddd">DDD</span>
+                </li>
+                <li class="value-item value-maintainability" style="--value-order: 5">
+                  <span class="value-node" aria-hidden="true"></span>
+                  <span data-i18n="about.values.maintainability">Maintainability</span>
+                </li>
+                <li class="value-item value-learning" style="--value-order: 6">
+                  <span class="value-node" aria-hidden="true"></span>
+                  <span data-i18n="about.values.learning">Continuous Learning</span>
+                </li>
+                <li class="value-item value-problem" style="--value-order: 7">
+                  <span class="value-node" aria-hidden="true"></span>
+                  <span data-i18n="about.values.problemSolving">Problem Solving</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="about-closing about-reveal" data-reveal>
+            <svg class="closing-sprig" viewBox="0 0 150 190" aria-hidden="true">
+              <path d="M23 180C39 119 75 69 130 14"/>
+              <path class="closing-leaf" d="M64 106c-27-2-43 9-51 32 25 0 42-10 51-32ZM91 70c21-3 37 4 47 22-20 3-36-4-47-22Z"/>
+            </svg>
+            <p class="closing-lead" data-i18n="about.closingLead">Curious by nature.</p>
+            <p class="closing-copy" data-i18n="about.closingCopy">Always learning, experimenting and looking for better ways to build things.</p>
+          </footer>
+        </div>
+      </section>
+
+      <section class="experience" id="experience" aria-labelledby="experience-title">
+        <div class="experience-inner">
+          <header class="experience-heading experience-reveal" data-experience-reveal>
+            <h2 id="experience-title" data-i18n="experience.title">Professional experience</h2>
+            <p data-i18n="experience.supportingLine">Building software from different perspectives.</p>
+          </header>
+
+          <article class="experience-role experience-reveal" data-experience-reveal>
+            <div class="role-identity">
+              <p class="role-company">Lean Mind</p>
+              <p class="role-title">Software Crafter</p>
+            </div>
+            <p class="role-date" data-i18n="experience.date">August 2024 — Present</p>
+            <p class="role-description" data-i18n="experience.description">I work across different layers of software applications, from frontend and backend to domain modelling and integrations with Python services.</p>
+          </article>
+
+          <div class="software-system experience-reveal" data-experience-reveal>
+            <svg class="system-lines system-lines-desktop" viewBox="0 0 1200 440" preserveAspectRatio="none" aria-hidden="true">
+              <path class="system-contour contour-one" pathLength="1" d="M23 99C181 12 304 36 418 91s209 71 352 11 249-21 407 52"/>
+              <path class="system-contour contour-two" pathLength="1" d="M17 331c141-71 269-57 385 2s226 62 361 1 258-66 421-4"/>
+              <path class="system-connector" pathLength="1" d="M119 115C252 120 279 205 420 204s181-75 329-27 167 126 332 117"/>
+              <path class="agentic-route" pathLength="1" d="M50 286C180 278 202 116 365 126s178 183 346 162 231-151 438-125"/>
+              <circle class="agentic-point" cx="0" cy="0" r="5">
+                <animateMotion dur="1.5s" begin="indefinite" fill="freeze" path="M50 286C180 278 202 116 365 126s178 183 346 162 231-151 438-125"/>
+              </circle>
+            </svg>
+            <svg class="system-lines system-lines-mobile" viewBox="0 0 320 580" preserveAspectRatio="none" aria-hidden="true">
+              <path class="system-contour contour-one" pathLength="1" d="M36 16c42 75 29 129 0 190s-23 127 11 179 37 109 6 179"/>
+              <path class="system-contour contour-two" pathLength="1" d="M281 15c-38 76-28 131 0 192s20 124-13 178-34 110-2 179"/>
+              <path class="system-connector" pathLength="1" d="M163 24c-43 72 39 111 0 180s40 119 0 180 25 113 0 174"/>
+              <path class="agentic-route" pathLength="1" d="M94 15c106 69-23 129 83 187s-23 131 69 190-55 103-14 169"/>
+              <circle class="agentic-point" cx="232" cy="561" r="4"/>
+            </svg>
+
+            <ol class="layer-list" aria-label="Software layers" data-i18n-aria-label="experience.layersLabel">
+              <li class="software-layer layer-frontend" tabindex="0" style="--layer-order: 1">
+                <div class="layer-index" aria-hidden="true">01</div>
+                <div class="layer-content">
+                  <h3>Frontend</h3>
+                  <p>React · TypeScript · Chakra UI · Vitest</p>
+                </div>
+              </li>
+              <li class="software-layer layer-domain" tabindex="0" style="--layer-order: 2">
+                <div class="layer-index" aria-hidden="true">02</div>
+                <div class="layer-content">
+                  <h3>Domain</h3>
+                  <p data-i18n="experience.layers.domain">DDD · TDD · Hexagonal Architecture · Clean Architecture</p>
+                </div>
+              </li>
+              <li class="software-layer layer-backend" tabindex="0" style="--layer-order: 3">
+                <div class="layer-index" aria-hidden="true">03</div>
+                <div class="layer-content">
+                  <h3>Backend</h3>
+                  <p>Node.js · NestJS · REST APIs · SSE</p>
+                </div>
+              </li>
+              <li class="software-layer layer-python" tabindex="0" style="--layer-order: 4">
+                <div class="layer-index" aria-hidden="true">04</div>
+                <div class="layer-content">
+                  <h3>Python <span data-i18n="experience.layers.integrations">integrations</span></h3>
+                  <p data-i18n="experience.layers.python">Python · Optimization services · Service integration</p>
+                </div>
+              </li>
+            </ol>
+
+            <aside class="agentic-flow" aria-labelledby="agentic-title">
+              <span class="agentic-key" aria-hidden="true"></span>
+              <div>
+                <h3 id="agentic-title">Agentic / AI</h3>
+                <p data-i18n="experience.layers.ai">AI-assisted development · Agentic workflows · Human review · Sustainable code</p>
+              </div>
+            </aside>
+          </div>
+
+          <div class="experience-principle experience-reveal" data-experience-reveal>
+            <p data-i18n="experience.aiStatement">AI can accelerate the way we build software, but good engineering still depends on understanding the domain, validating decisions and keeping the code maintainable.</p>
+          </div>
+
+          <div class="engineering-cycle experience-reveal" data-experience-reveal aria-labelledby="cycle-title">
+            <h3 id="cycle-title" class="visually-hidden" data-i18n="experience.cycle.title">Build, validate, improve</h3>
+            <svg class="cycle-path" viewBox="0 0 760 138" preserveAspectRatio="none" aria-hidden="true">
+              <path pathLength="1" d="M117 69C225 8 321 8 380 69s155 61 263 0"/>
+              <path pathLength="1" d="M643 69c-108 61-204 61-263 0S225 8 117 69"/>
+              <path class="cycle-arrow" d="m632 57 11 12-15 7M128 81l-11-12 15-7"/>
+            </svg>
+            <ol class="cycle-stages">
+              <li style="--stage-order: 1">
+                <span data-i18n="experience.cycle.build">BUILD</span>
+                <small data-i18n="experience.cycle.buildDetail">Implementation + architecture</small>
+              </li>
+              <li style="--stage-order: 2">
+                <span data-i18n="experience.cycle.validate">VALIDATE</span>
+                <small data-i18n="experience.cycle.validateDetail">Testing + human review</small>
+              </li>
+              <li style="--stage-order: 3">
+                <span data-i18n="experience.cycle.improve">IMPROVE</span>
+                <small data-i18n="experience.cycle.improveDetail">Refactoring + learning</small>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <div class="skills-inner">
+          <header class="skills-heading skills-reveal" data-skills-reveal>
+            <h2 id="skills-title" data-i18n="skills.title">Technologies &amp; skills</h2>
+            <p data-i18n="skills.supportingLine">Tools change. The way we build matters more.</p>
+          </header>
+
+          <div class="skills-mode-switch skills-reveal" role="tablist" aria-label="Skills experience type" data-i18n-aria-label="skills.modeLabel" data-skills-reveal>
+            <button id="professional-mode-tab" class="skills-mode-button" type="button" role="tab" aria-selected="true" aria-controls="professional-toolkit">
+              <span data-i18n="skills.modes.professional">Professional toolkit</span>
+            </button>
+            <button id="explored-mode-tab" class="skills-mode-button" type="button" role="tab" aria-selected="false" aria-controls="explored-toolkit" tabindex="-1">
+              <span data-i18n="skills.modes.explored">Explored &amp; learned</span>
+            </button>
+          </div>
+
+          <div class="technical-explorer skills-reveal" data-mode="professional" data-skills-reveal>
+            <section class="skills-mode-panel professional-toolkit" id="professional-toolkit" role="tabpanel" aria-labelledby="professional-mode-tab">
+              <aside class="explorer-index">
+                <p class="explorer-label" data-i18n="skills.toolkitLabel">Technical toolkit</p>
+                <div class="category-tabs" role="tablist" aria-label="Professional skill categories" aria-orientation="vertical" data-i18n-aria-label="skills.categoryLabel">
+                  <button id="frontend-tab" class="category-tab" type="button" role="tab" aria-selected="true" aria-controls="frontend-panel">
+                    <span data-i18n="skills.categories.frontend">Frontend</span>
+                  </button>
+                  <button id="backend-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="backend-panel" tabindex="-1">
+                    <span data-i18n="skills.categories.backend">Backend</span>
+                  </button>
+                  <button id="architecture-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="architecture-panel" tabindex="-1">
+                    <span data-i18n="skills.categories.architecture">Architecture &amp; Quality</span>
+                  </button>
+                  <button id="data-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="data-panel" tabindex="-1">
+                    <span data-i18n="skills.categories.data">Data</span>
+                  </button>
+                  <button id="python-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="python-panel" tabindex="-1">
+                    <span data-i18n="skills.categories.python">Python &amp; Integration</span>
+                  </button>
+                  <button id="devops-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="devops-panel" tabindex="-1">
+                    <span data-i18n="skills.categories.devops">DevOps</span>
+                  </button>
+                  <button id="ai-tab" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="ai-panel" tabindex="-1">
+                    <span data-i18n="skills.categories.ai">AI &amp; Agentic</span>
+                  </button>
+                </div>
+              </aside>
+
+              <div class="professional-fields">
+                <section class="skill-panel skill-panel-frontend" id="frontend-panel" role="tabpanel" aria-labelledby="frontend-tab">
+                  <h3 data-i18n="skills.categories.frontend">Frontend</h3>
+                  <div class="technology-field">
+                    <ul class="technology-list">
+                      <li class="tech-name tech-major" style="--x: 8%; --y: 13%; --order: 1">TypeScript</li>
+                      <li class="tech-name tech-small" style="--x: 49%; --y: 8%; --order: 2">JavaScript</li>
+                      <li class="tech-name tech-feature" style="--x: 67%; --y: 26%; --order: 3">React</li>
+                      <li class="tech-name tech-small" style="--x: 21%; --y: 40%; --order: 4">HTML</li>
+                      <li class="tech-name tech-medium" style="--x: 48%; --y: 48%; --order: 5">CSS</li>
+                      <li class="tech-name tech-small" style="--x: 77%; --y: 58%; --order: 6">Chakra UI</li>
+                      <li class="tech-name tech-medium" style="--x: 10%; --y: 70%; --order: 7">Leaflet</li>
+                      <li class="tech-name tech-small" style="--x: 39%; --y: 79%; --order: 8">Vite</li>
+                      <li class="tech-name tech-medium" style="--x: 62%; --y: 75%; --order: 9">Vitest</li>
+                      <li class="tech-name tech-small" style="--x: 53%; --y: 91%; --order: 10">React Testing Library</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="skill-panel skill-panel-backend" id="backend-panel" role="tabpanel" aria-labelledby="backend-tab">
+                  <h3 data-i18n="skills.categories.backend">Backend</h3>
+                  <div class="technology-field">
+                    <ul class="technology-list">
+                      <li class="tech-name tech-feature" style="--x: 12%; --y: 20%; --order: 1">Node.js</li>
+                      <li class="tech-name tech-major" style="--x: 47%; --y: 39%; --order: 2">NestJS</li>
+                      <li class="tech-name tech-medium" style="--x: 18%; --y: 67%; --order: 3">REST APIs</li>
+                      <li class="tech-name tech-small" style="--x: 72%; --y: 72%; --order: 4">SSE</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="skill-panel skill-panel-architecture" id="architecture-panel" role="tabpanel" aria-labelledby="architecture-tab">
+                  <h3 data-i18n="skills.categories.architecture">Architecture &amp; Quality</h3>
+                  <div class="technology-field">
+                    <ul class="technology-list">
+                      <li class="tech-name tech-medium" style="--x: 16%; --y: 22%; --order: 1">DDD</li>
+                      <li class="tech-name tech-medium" style="--x: 72%; --y: 24%; --order: 2">TDD</li>
+                      <li class="tech-name tech-feature" style="--x: 23%; --y: 52%; --order: 3" data-i18n="skills.technologies.hexagonal">Hexagonal Architecture</li>
+                      <li class="tech-name tech-major" style="--x: 45%; --y: 76%; --order: 4">Clean Architecture</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="skill-panel skill-panel-data" id="data-panel" role="tabpanel" aria-labelledby="data-tab">
+                  <h3 data-i18n="skills.categories.data">Data</h3>
+                  <div class="technology-field">
+                    <ul class="technology-list">
+                      <li class="tech-name tech-feature" style="--x: 24%; --y: 30%; --order: 1">SQL</li>
+                      <li class="tech-name tech-major" style="--x: 48%; --y: 53%; --order: 2">SQLite</li>
+                      <li class="tech-name tech-medium" style="--x: 35%; --y: 76%; --order: 3">Drizzle ORM</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="skill-panel skill-panel-python" id="python-panel" role="tabpanel" aria-labelledby="python-tab">
+                  <h3 data-i18n="skills.categories.python">Python &amp; Integration</h3>
+                  <div class="technology-field">
+                    <ul class="technology-list">
+                      <li class="tech-name tech-feature" style="--x: 9%; --y: 22%; --order: 1">Python</li>
+                      <li class="tech-name tech-major" style="--x: 43%; --y: 49%; --order: 2" data-i18n="skills.technologies.serviceIntegration">Service Integration</li>
+                      <li class="tech-name tech-medium" style="--x: 17%; --y: 76%; --order: 3" data-i18n="skills.technologies.optimization">Optimization Algorithms</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="skill-panel skill-panel-devops" id="devops-panel" role="tabpanel" aria-labelledby="devops-tab">
+                  <h3 data-i18n="skills.categories.devops">DevOps</h3>
+                  <div class="technology-field">
+                    <ul class="technology-list">
+                      <li class="tech-name tech-feature" style="--x: 9%; --y: 47%; --order: 1">Git</li>
+                      <li class="tech-name tech-major" style="--x: 39%; --y: 47%; --order: 2">GitLab CI/CD</li>
+                      <li class="tech-name tech-feature" style="--x: 67%; --y: 47%; --order: 3">Docker</li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="skill-panel skill-panel-ai" id="ai-panel" role="tabpanel" aria-labelledby="ai-tab">
+                  <h3 data-i18n="skills.categories.ai">AI &amp; Agentic</h3>
+                  <div class="technology-field">
+                    <ul class="technology-list">
+                      <li class="tech-name tech-major" style="--x: 8%; --y: 20%; --order: 1" data-i18n="skills.technologies.aiAssisted">AI-assisted development</li>
+                      <li class="tech-name tech-feature" style="--x: 52%; --y: 39%; --order: 2" data-i18n="skills.technologies.agentic">Agentic workflows</li>
+                      <li class="tech-name tech-medium" style="--x: 20%; --y: 68%; --order: 3" data-i18n="skills.technologies.humanReview">Human review</li>
+                      <li class="tech-name tech-small" style="--x: 64%; --y: 80%; --order: 4" data-i18n="skills.technologies.sustainable">Sustainable code</li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </section>
+
+            <section class="skills-mode-panel explored-toolkit" id="explored-toolkit" role="tabpanel" aria-labelledby="explored-mode-tab">
+              <p class="explorer-label" data-i18n="skills.modes.explored">Explored &amp; learned</p>
+              <div class="skill-panel skill-panel-explored">
+                <h3 class="visually-hidden" data-i18n="skills.modes.explored">Explored &amp; learned</h3>
+                <div class="technology-field">
+                  <ul class="technology-list">
+                    <li class="tech-name tech-feature" style="--x: 13%; --y: 25%; --order: 1">Kotlin</li>
+                    <li class="tech-name tech-medium" style="--x: 68%; --y: 21%; --order: 2">Java</li>
+                    <li class="tech-name tech-major" style="--x: 38%; --y: 46%; --order: 3" data-i18n="skills.technologies.aiSystems">AI &amp; Agentic Systems</li>
+                    <li class="tech-name tech-feature" style="--x: 17%; --y: 70%; --order: 4">WordPress</li>
+                    <li class="tech-name tech-major" style="--x: 70%; --y: 75%; --order: 5" data-i18n="skills.technologies.robotics">Robotics</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="projects-inner">
+          <header class="projects-heading projects-reveal" data-projects-reveal>
+            <h2 id="projects-title" data-i18n="projects.title">Personal projects</h2>
+            <p data-i18n="projects.supportingLine">Ideas I turn into real systems.</p>
+          </header>
+
+          <div class="projects-gallery">
+            <article class="project-card projects-reveal" tabindex="0" data-projects-reveal style="--project-order: 1">
+              <div class="project-visual">
+                <div class="project-image-frame">
+                  <img class="project-image project-image-rebot" src="assets/images/re-bot.png" width="1536" height="1024" loading="lazy" decoding="async" alt="ReBot autonomous cleanup robot collecting waste outdoors." data-i18n-alt="projects.rebot.alt">
+                </div>
+                <div class="project-overlay">
+                  <p class="project-description" data-i18n="projects.rebot.description">An autonomous robot designed to detect, collect and manage waste in its environment using robotics, software and artificial intelligence.</p>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>ReBot</h3>
+                <p class="project-category" data-i18n="projects.rebot.category">Robotics · AI · Agentic Systems</p>
+                <p class="project-status project-status-active">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span data-i18n="projects.rebot.status">IN DEVELOPMENT</span>
+                </p>
+                <!-- Project action intentionally omitted until a verified ReBot URL is supplied. -->
+              </div>
+            </article>
+
+            <article class="project-card projects-reveal" tabindex="0" data-projects-reveal style="--project-order: 2">
+              <div class="project-visual">
+                <div class="project-image-frame">
+                  <img class="project-image project-image-ocean" src="assets/images/ocean-watch.png" width="1536" height="1024" loading="lazy" decoding="async" alt="OceanWatch autonomous marine robot collecting waste underwater." data-i18n-alt="projects.oceanWatch.alt">
+                </div>
+                <div class="project-overlay">
+                  <p class="project-description" data-i18n="projects.oceanWatch.description">An autonomous marine robotics concept for collecting ocean waste while monitoring its environment and observing nearby marine life.</p>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>OceanWatch</h3>
+                <p class="project-category" data-i18n="projects.oceanWatch.category">Robotics · AI · Ocean Technology</p>
+                <p class="project-status project-status-future">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span data-i18n="projects.oceanWatch.status">COMING SOON</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card projects-reveal" tabindex="0" data-projects-reveal style="--project-order: 3">
+              <div class="project-visual">
+                <div class="project-image-frame">
+                  <img class="project-image project-image-plant" src="assets/images/plant-guardian.png" width="1536" height="1024" loading="lazy" decoding="async" alt="PlantGuardian smart agriculture concept monitoring a crop." data-i18n-alt="projects.plantGuardian.alt">
+                </div>
+                <div class="project-overlay">
+                  <p class="project-description" data-i18n="projects.plantGuardian.description">An intelligent agriculture concept for monitoring crops, detecting potential problems and supporting decisions with environmental and historical data.</p>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>PlantGuardian</h3>
+                <p class="project-category" data-i18n="projects.plantGuardian.category">AI · Data · Smart Agriculture</p>
+                <p class="project-status project-status-future">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span data-i18n="projects.plantGuardian.status">COMING SOON</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles" id="articles" aria-labelledby="articles-title">
+        <div class="articles-inner">
+          <header class="articles-heading articles-reveal" data-articles-reveal>
+            <h2 id="articles-title" data-i18n="articles.title">Articles &amp; talks</h2>
+            <p data-i18n="articles.supportingLine">Sharing what I learn along the way.</p>
+          </header>
+
+          <ol class="journal-list journal-structure" data-articles-reveal>
+            <li class="journal-entry article-upcoming articles-reveal" data-articles-reveal style="--entry-order: 1">
+              <article>
+                <div class="entry-meta">
+                  <p class="entry-type entry-type-upcoming">
+                    <span class="entry-status-dot" aria-hidden="true"></span>
+                    <span data-i18n="articles.upcoming.type">UPCOMING TALK</span>
+                  </p>
+                  <time datetime="2026-10-23" data-i18n="articles.upcoming.date">OCT 23, 2026</time>
+                  <span class="entry-context" data-i18n="articles.upcoming.context">INTERNAL</span>
+                </div>
+                <div class="entry-content">
+                  <h3 data-i18n="articles.upcoming.title">How AI transforms the software development lifecycle</h3>
+                  <p class="entry-description" data-i18n="articles.upcoming.description">How artificial intelligence is transforming the different stages of software development and how to integrate it while maintaining good engineering practices.</p>
+                </div>
+                <span class="entry-index" aria-hidden="true">01</span>
+              </article>
+            </li>
+
+            <li class="journal-entry articles-reveal" data-articles-reveal style="--entry-order: 2">
+              <article>
+                <div class="entry-meta">
+                  <p class="entry-type" data-i18n="articles.madridJs.type">TALK</p>
+                </div>
+                <div class="entry-content">
+                  <h3>From Monolith to Event-Driven Architecture — MadridJS</h3>
+                  <p class="entry-description" data-i18n="articles.madridJs.description">A talk about evolving a monolithic architecture towards an event-driven approach.</p>
+                  <p class="entry-credit" data-i18n="articles.madridJs.credit">Presented with Adrián Ferrera.</p>
+                </div>
+                <span class="entry-index" aria-hidden="true">02</span>
+              </article>
+            </li>
+
+            <li class="journal-entry articles-reveal" data-articles-reveal style="--entry-order: 3">
+              <article>
+                <div class="entry-meta">
+                  <p class="entry-type" data-i18n="articles.aiPairProgramming.type">ARTICLE</p>
+                  <time datetime="2026">2026</time>
+                </div>
+                <div class="entry-content">
+                  <h3>AI breaks pair programming</h3>
+                  <p class="entry-description" data-i18n="articles.aiPairProgramming.description">A reflection on how artificial intelligence is changing traditional pair programming dynamics.</p>
+                </div>
+                <span class="entry-index" aria-hidden="true">03</span>
+              </article>
+            </li>
+
+            <li class="journal-entry articles-reveal" data-articles-reveal style="--entry-order: 4">
+              <article>
+                <div class="entry-meta">
+                  <p class="entry-type" data-i18n="articles.repositoryPattern.type">ARTICLE</p>
+                  <time datetime="2024-05" data-i18n="articles.repositoryPattern.date">MAY 2024</time>
+                </div>
+                <div class="entry-content">
+                  <h3>Repository Pattern</h3>
+                  <p class="entry-description" data-i18n="articles.repositoryPattern.description">An introduction to the Repository Pattern and the separation between domain logic and persistence mechanisms.</p>
+                </div>
+                <span class="entry-index" aria-hidden="true">04</span>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="education" id="education" aria-labelledby="education-title">
+        <div class="education-inner">
+          <header class="education-heading education-reveal" data-education-reveal>
+            <h2 id="education-title" data-i18n="education.title">Education</h2>
+            <p data-i18n="education.supportingLine">The starting point of a curiosity that has kept growing.</p>
+          </header>
+
+          <article class="academic-note education-reveal" data-education-reveal>
+            <span class="academic-corner academic-corner-start" aria-hidden="true"></span>
+            <span class="academic-corner academic-corner-end" aria-hidden="true"></span>
+
+            <p class="education-period">
+              <time datetime="2021">2021</time>
+              <span class="period-rule" aria-hidden="true"></span>
+              <span class="period-dash" aria-hidden="true">—</span>
+              <time datetime="2024">2024</time>
+            </p>
+
+            <div class="qualification-block">
+              <h3 data-i18n="education.qualification">Higher Technician in Web Application Development (DAW)</h3>
+              <p class="qualification-code" aria-hidden="true">DAW</p>
+            </div>
+
+            <p class="education-institution">IES Las Galletas</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title" data-contact-reveal>
+        <div class="contact-inner">
+          <div class="contact-layout">
+            <header class="contact-heading contact-reveal" style="--contact-order: 1">
+              <h2 id="contact-title" data-i18n="contact.title">Shall we build something interesting?</h2>
+              <p data-i18n="contact.supportingLine">I'm always open to new ideas, conversations about software and projects worth building.</p>
+            </header>
+
+            <address class="contact-actions contact-reveal" style="--contact-order: 3">
+              <div class="contact-email">
+                <a class="contact-email-link" href="mailto:tatiiigomez2001@gmail.com">
+                  <span class="contact-action-label">Email</span>
+                  <span class="contact-email-address">tatiiigomez2001@gmail.com</span>
+                  <span class="contact-arrow" aria-hidden="true">→</span>
+                </a>
+                <button class="copy-email" type="button" hidden>
+                  <span data-copy-default data-i18n="contact.copyEmail">Copy email</span>
+                  <span data-copy-success data-i18n="contact.copied" hidden>Copied!</span>
+                </button>
+                <span class="copy-status visually-hidden" role="status" aria-live="polite"></span>
+              </div>
+
+              <a class="contact-action" href="https://www.linkedin.com/in/blanca-rosa-g%C3%B3mez-fern%C3%A1ndez-61303b203/" target="_blank" rel="noopener noreferrer">
+                <span>LinkedIn</span>
+                <span class="contact-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="contact-action" href="https://github.com/tatiii2001" target="_blank" rel="noopener noreferrer">
+                <span>GitHub</span>
+                <span class="contact-arrow" aria-hidden="true">↗</span>
+              </a>
+            </address>
+          </div>
+
+          <div class="closing-identity contact-reveal" style="--contact-order: 4">
+            <svg class="signature-stroke" viewBox="0 0 760 92" preserveAspectRatio="none" aria-hidden="true">
+              <path pathLength="1" d="M4 68c78-30 142-43 210-27 54 13 88 41 149 31 54-9 76-49 131-50 56-1 79 47 135 45 47-2 78-21 127-54"/>
+            </svg>
+            <div class="identity-copy">
+              <p>Blanca Rosa Gómez Fernández</p>
+              <span data-i18n="contact.role">Developer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-identity">
+          Blanca Rosa Gómez Fernández · <span data-i18n="contact.role">Developer</span> · 2026
+        </p>
+        <p data-i18n="contact.builtWith">Built with curiosity &amp; care.</p>
+        <a class="back-to-top" href="#home" data-i18n="contact.backToTop">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
