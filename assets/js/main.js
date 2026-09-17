@@ -168,8 +168,6 @@ const translations = {
       switchToDark: "Switch to dark theme",
       switchToLight: "Switch to light theme",
       downloadCv: "Download CV in Spanish",
-      githubPlaceholder: "GitHub, URL to be added",
-      linkedinPlaceholder: "LinkedIn, URL to be added",
     },
   },
   es: {
@@ -339,8 +337,6 @@ const translations = {
       switchToDark: "Cambiar al tema oscuro",
       switchToLight: "Cambiar al tema claro",
       downloadCv: "Descargar CV en español",
-      githubPlaceholder: "GitHub, URL pendiente",
-      linkedinPlaceholder: "LinkedIn, URL pendiente",
     },
   },
 };
@@ -509,10 +505,6 @@ document.addEventListener("click", (event) => {
   if (languageMenu.classList.contains("open") && !languageSelector.contains(event.target)) {
     closeLanguageMenu();
   }
-});
-
-document.querySelectorAll(".placeholder-link").forEach((link) => {
-  link.addEventListener("click", (event) => event.preventDefault());
 });
 
 function initializeStickyHeader() {
